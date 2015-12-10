@@ -1,0 +1,141 @@
+body {
+  padding-top: 50px;
+}
+
+.navbar-sl {
+  background-color: #ffffff;
+  border:none;
+}
+
+.navbar-default .navbar-brand-sl {
+  color: #165CB2;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav-sl>li>a {
+  color: #165CB2;
+  font-weight: bold;
+}
+
+.teaser {
+  padding-top: 0px;
+  padding-bottom: 80px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/img/chicago.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+.site-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.lead-sl {
+  color: #ffffff;
+}
+
+.carousel-caption-sl {
+  color: #165CB2;
+  font-size: 30px;
+  background-color: rgba(22,92,178,0.15);
+  width:100%;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.carousel-indicators-sl {
+  bottom: 0px;
+}
+
+.carousel-indicators-sl li {
+  background-color: #165CB2;
+  background-color: rgba(22,92,178,0.15);
+}
+
+.carousel-indicators .active {
+  background-color: #165CB2;
+}
+
+.carousel-control {
+  background-color: none;
+  opacity: 1.0;
+}
+
+.carousel-control:hover>.left,.right {
+  /*opacity: 1.0;*/
+  /*color: #165CB2;*/
+}
+
+.carousel-control.left,.carousel-control.right {
+  /*background-image: none;
+  color: rgba(22,92,178,0.15);
+  text-shadow: none;*/
+}
+
+.panel-sl {
+  /*border-color: #31708F;*/
+}
+
+.panel-body-sl {
+  padding: 5px;
+}
+
+.panel-sl>.panel-heading {
+  color: #165CB2;
+  border-bottom-width: 3px;
+  border-color: #165CB2;
+  background-color: rgba(22,92,178,0.15);
+}
+
+.panel-sl>.panel-heading>.panel-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.panel-sl>.panel-body>.panel-subtitle {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+}
+.panel-sl>.panel-body>.panel-subheader {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.about-links-sl, .resources-sl {
+  list-style:none;
+  padding-left: 0px;
+}
+
+.about-links-sl>li>a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.resources-sl>li>a {
+}
+
+.thumbnail {
+  /*border: none;*/
+}
+
+/*.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}*/
