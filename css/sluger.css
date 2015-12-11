@@ -129,13 +129,7 @@ body {
 .resources-sl>li>a {
 }
 
-.thumbnail {
-  /*border: none;*/
+.label-sl {
+  background-color: rgba(22,92,178,0.15);
+  color: #165CB2;
 }
-
-/*.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}*/
