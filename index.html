@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <meta name="description" content="Stefan Luger | Web Developer">
-    <meta name="author" content="sluger">
-    <link rel="icon" href="assets/img/favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Stefan Luger | Web Developer</title>
+  <meta name="description" content="Stefan Luger | Web Developer">
+  <meta name="author" content="sluger">
+  <link rel="icon" href="assets/img/favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>Stefan Luger | Web Developer</title>
 
-    <!-- Lightbox -->
-    <link href="css/lightbox.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- FontAwesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Lightbox -->
+  <link href="css/lightbox.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/sluger.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+  <!-- Custom styles for this template -->
+  <link href="css/sluger.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-sl navbar-fixed-top">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-sl navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -53,250 +55,214 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
         </ul>
-      </div><!--/.nav-collapse -->
+      </div>
+      <!--/.nav-collapse -->
     </div>
   </nav>
 
-    <!-- teaser -->
-    <section id="teaser" class="teaser">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-5"><h1 class="site-title">Stefan Luger</h1></div>
-          <div class="col-md-5"><h4 class="lead lead-sl">Web Developer, Visualization Expert,<br> Technology and Hardware Enthusiast</h4>
+  <!-- teaser -->
+  <section id="teaser" class="teaser">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <h1 class="site-title">Stefan Luger</h1>
+        </div>
+        <div class="col-md-5">
+          <h4 class="lead lead-sl">Web Developer, Visualization Expert,
+            <br> Technology and Hardware Enthusiast</h4>
         </div>
       </div>
-    </section>
+  </section>
 
-    <!-- overview -->
-    <!--section id="overview" class="overview">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-6">
-            <div class="thumbnail">
-              <img src="assets/img/provenance-vis.png" alt="...">
-              <div class="caption">
-                <h3>Provenance Visualization</h3>
-                <p><a href="#provvis" class="btn btn-primary" role="button">More</a></p>
+  <!-- overview -->
+  <section id="overview" class="overview">
+    <div class="container">
+      <div class="panel panel-sl">
+        <div class="panel-heading panel-heading-sl">
+          <p class="panel-title">Highlights</p>
+        </div>
+        <div class="panel-body panel-body-sl">
+          <div id="overview-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators carousel-indicators-sl">
+              <li data-target="#overview-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#overview-carousel" data-slide-to="1"></li>
+              <li data-target="#overview-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="assets/img/carousel/provvis.png" alt="...">
+                <a href="#provvis">
+                  <div class="carousel-caption carousel-caption-sl">
+                    Provenance Visualization
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <img src="assets/img/carousel/wfvis.png" alt="...">
+                <a href="#wfvis">
+                  <div class="carousel-caption carousel-caption-sl">
+                    Workflow Visualization
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <img src="assets/img/carousel/umltrans.png" alt="...">
+                <a href="#umltrans">
+                  <div class="carousel-caption carousel-caption-sl">
+                    UML Transformations
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-6">
-            <div class="thumbnail">
-              <img src="assets/img/workflow-vis.png" alt="...">
-              <div class="caption">
-                <h3>Workflow Visualization</h3>
-                <p><a href="#wfvis" class="btn btn-primary" role="button">More</a></p>
-              </div>
-            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#overview-carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#overview-carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
-    </section-->
+    </div>
+  </section>
 
-    <!-- overview -->
-    <section id="overview" class="overview">
-      <div class="container">
-          <div class="panel panel-sl">
-            <div class="panel-heading panel-heading-sl">
-              <p class="panel-title">Highlights</p>
-            </div>
-            <div class="panel-body panel-body-sl">
-              <div id="overview-carousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators carousel-indicators-sl">
-                  <li data-target="#overview-carousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#overview-carousel" data-slide-to="1"></li>
-                  <li data-target="#overview-carousel" data-slide-to="2"></li>
-                </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                      <img src="assets/img/carousel/provvis.png" alt="..." >
-                      <a href="#provvis">
-                      <div class="carousel-caption carousel-caption-sl">
-                        Provenance Visualization
-                      </div>
-                      </a>
-                  </div>
-                  <div class="item">
-                    <img src="assets/img/carousel/wfvis.png" alt="..." >
-                    <a href="#wfvis">
-                    <div class="carousel-caption carousel-caption-sl">
-                      Workflow Visualization
-                    </div>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <img src="assets/img/carousel/umltrans.png" alt="...">
-                    <a href="#umltrans">
-                    <div class="carousel-caption carousel-caption-sl">
-                      UML Transformations
-                    </div>
-                    </a>
-                  </div>
-                </div>
 
-                <!-- Controls -->
-                <a class="left carousel-control" href="#overview-carousel" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#overview-carousel" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-          </div>
+
+  <!-- projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div id="provvis" class="panel panel-sl">
+        <div class="panel-heading panel-heading-sl">
+          <p class="panel-title">Master's Thesis</p>
         </div>
-    </section>
+        <div class="panel-body panel-body-sl">
+          <p class="panel-subtitle">Interactive Visualization of Provenance Graphs for Reproducible Biomedical Research</p>
+          <p align="justify">A major challenge of data-driven biomedical research lies in the collection and representation of provenance information to ensure reproducibility of the gained results. The Refinery Platform is an integrated data management, analysis, and visualization system designed to support reproducible biomedical research. In order to communicate and reproduce multi-step analyses on datasets that contain data of hundreds of samples, it is crucial to be able to visualize the provenance graph at different levels of detail. Most existing approaches are based on node-link diagrams, however, they usually do not scale well to large graphs. Our proposed visualization technique dynamically reduces the complexity of subgraphs through hierarchical aggregation and application of a degree-of-interest (DOI) function to each node. Triggered by user interactions, such as selecting a subset of analyses or a path in the graph, unaffected parts of the graph are dynamically aggregated into a glyph representation. We further reduce the complexity of the provenance graph visualization by layering identical or similar sequences of parallel analysis steps into an aggregated sequence.</p>
+          <h4>Advisors</h4>
+          <p>Assist. Prof. Marc Streit at JKU and Assist. Prof. Nils Gehlenborg at Harvard Medical School, Boston, MA, USA.</p>
 
+          <p>Master's Thesis at Johannes Kepler University, Linz, Austria.</p>
+          <p>2014-2015</p>
 
+          <h4>Tech</h4>
+          <p>Graphs, Data Visualization, and Full Stack Web Development</p>
 
-
-    <!-- projects -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <div id="provvis" class="panel panel-sl">
-          <div class="panel-heading panel-heading-sl">
-            <p class="panel-title">Master's Thesis</p>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="assets/img/135-02-colors-nodetypes.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
+                <img src="assets/img/135-02-colors-nodetypes.png" class="img-rounded" alt="Provenance Visualization">
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="assets/img/135-06-layers.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
+                <img src="assets/img/135-06-layers.png" class="img-rounded" alt="Provenance Visualization">
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="assets/img/135-07-analyses.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
+                <img src="assets/img/135-07-analyses.png" class="img-rounded" alt="Provenance Visualization">
+              </a>
+            </div>
           </div>
-          <div class="panel-body panel-body-sl">
-            <p class="panel-subtitle">Interactive Visualization of Provenance Graphs for Reproducible Biomedical Research</p>
-            <p align="justify">A major challenge of data-driven biomedical research lies in the collection and representation of provenance information to ensure reproducibility of the gained results. The Refinery Platform is an integrated data management, analysis, and visualization system designed to support reproducible biomedical research. In order to communicate and reproduce multi-step analyses on datasets that contain data of hundreds of samples, it is crucial to be able to visualize the provenance graph at different levels of detail. Most existing approaches are based on node-link diagrams, however, they usually do not scale well to large graphs. Our proposed visualization technique dynamically reduces the complexity of subgraphs through hierarchical aggregation and application of a degree-of-interest (DOI) function to each node. Triggered by user interactions, such as selecting a subset of analyses or a path in the graph, unaffected parts of the graph are dynamically aggregated into a glyph representation. We further reduce the complexity of the provenance graph visualization by layering identical or similar sequences of parallel analysis steps into an aggregated sequence.</p>
-            <p>Advisors: Assist. Prof. Marc Streit at JKU and Assist. Prof. Nils Gehlenborg at Harvard Medical School, Boston, MA, USA.</p>
-            <p>Master's Thesis at Johannes Kepler University, Linz, Austria.</p>
-            <p>2014-2015</p>
-            <p>Tech: Graphs, Data Visualization, and Full Stack Web Development</p>
 
-            <div class="row">
-              <div class="col-md-4">
-                <a href="assets/img/135-02-colors-nodetypes.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/135-02-colors-nodetypes.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="assets/img/135-06-layers.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/135-06-layers.png" class="img-rounded" alt="Provenance Visualization">
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="assets/img/135-07-analyses.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/135-07-analyses.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137118409" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen width="100%" min-height="100%" seamless=""></iframe>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-md-7">
-                <iframe src="https://player.vimeo.com/video/137118409" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              </div>
-              <div class="col-md-3">
-                <a href="assets/img/best-poster.jpg" data-lightbox="provvis" data-title="Best Poster Award at 2015 Chicago, IL, USA" class="thumbnail">
-                  <img src="assets/img/best-poster.jpg" class="img-rounded" alt="IEEE VIS" style="max-height:281px;">
-                </a>
-              </div>
-              <div class="col-md-2">
-                <a href="assets/img/ieeevis.jpg" data-lightbox="provvis" data-title="Presentation at IEEE VIS 2015 Chicago, IL, USA" class="thumbnail">
-                  <img src="assets/img/ieeevis.jpg" class="img-rounded" alt="IEEE VIS" style="max-height:281px;">
-                </a>
-              </div>
+            <div class="col-md-3">
+              <a href="assets/img/ieeevis.jpg" data-lightbox="provvis" data-title="Presentation at IEEE VIS 2015 Chicago, IL, USA" class="thumbnail">
+                <img src="assets/img/ieeevis.jpg" class="img-rounded" alt="IEEE VIS" style="max-height:281px;">
+              </a>
             </div>
-
-            <p>Resources</p>
-            <ul class="resources-sl">
-              <li><a href="https://github.com/parklab/refinery-platform"><i class="fa fa-github"></i> Source</a></li>
-              <li><a href="http://www.refinery-platform.org/"><i class="fa fa-external-link"></i> http://www.refinery-platform.org/</a></li>
-              <li><a href="assets/docs/provvis-poster-submission.pdf" download><i class="fa fa-download"></i> IEEE VIS Poster Submission</a></li>
-              <li><a href="assets/docs/provvis-poster.pdf" download><i class="fa fa-download"></i> IEEE VIS Poster</a></li>
-              <!--li><a href="docs/provvis-presentation.pdf" download></li-->
-            </ul>
-          </div>
-        </div>
-
-        <div id="meanapp" class="panel panel-sl">
-          <div class="panel-heading">
-            <h3 class="panel-title">MEAN Stack App</h3>
-          </div>
-          <div class="panel-body panel-body-sl">
-            <!--p class="panel-subtitle">An Interactive Workflow Visualization for Biomedical Processing Pipelines Integrated into the Refinery Platform</p-->
-            <p align="justify">This is a very simple MEAN Stack App based on MongoDB, Express.js, AngularJS, and Node.js that lists TV Shows with a Title and a Rating. The backend is done via Express on top of Node that provides a RESTful API of simple data stored in MongoDB. The frontend is written in Angular that consumes the REST endpoints with ngResource. Routing is done with ngRoute.</p>
-            <p>2015</p>
-            <p>Tech: MongoDB, Express.js, AngularJS, Node.js</p>
-
-            <!--div class="row">
-              <div class="col-md-12">
-                <a href="assets/img/workflow-vis.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/workflow-vis.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
-              </div>
-            </div-->
-
-            <p>Resources</p>
-            <ul class="resources-sl">
-              <li><a href="https://github.com/sluger/MeanShows"><i class="fa fa-github"></i> Source</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div id="djangoapp" class="panel panel-sl">
-          <div class="panel-heading">
-            <h3 class="panel-title">RESTful Django Angular App</h3>
-          </div>
-          <div class="panel-body panel-body-sl">
-            <!--p class="panel-subtitle">An Interactive Workflow Visualization for Biomedical Processing Pipelines Integrated into the Refinery Platform</p-->
-            <p align="justify">This project is based on Django and AngularJS using Tastypie to separate client and server side. Initially this project focused on a serverside only implementation (e.g. Django inline formsets - hence the formset naming) and was then expanded through Tastypie and AngularJS to add a decoupled client side via restful API. The data held is of 'Authors' and 'Books', where multiple Authors may have written multiple books and vice versa.</p>
-            <p>2015</p>
-            <p>Tech: Django, Python, Tastypie, AngularJS</p>
-
-            <!--div class="row">
-              <div class="col-md-12">
-                <a href="assets/img/workflow-vis.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/workflow-vis.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
-              </div>
-            </div-->
-
-            <p>Resources</p>
-            <ul class="resources-sl">
-              <li><a href="https://github.com/sluger/Restful-Django-Angular-Tutorial"><i class="fa fa-github"></i> Source</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div id="wfvis" class="panel panel-sl">
-          <div class="panel-heading">
-            <h3 class="panel-title">Master Practicum</h3>
-          </div>
-          <div class="panel-body panel-body-sl">
-            <p class="panel-subtitle">An Interactive Workflow Visualization for Biomedical Processing Pipelines Integrated into the Refinery Platform</p>
-            <p align="justify">In the field of biomedical research, domain experts have to manage the complexity of heterogeneous and large data processed within analysis pipelines. Their goal is to get insights through (intermediate) results conveyed by the workflows representing the pipelines. Obviously, when analyzing biomedical data (such as blood samples taken from patients), the information is stored in raw text formats and often too big to be handled. Scientific workflows consist of tools with each of them defining their own experiment execution parameters. Because of the vast amount of data being processed, simply labeling the tools of a workflow (Nodes) and the IO-file stream connecting nodes (Links) would cause too much textual information. The Refinery Platform (Refinery) - developed by the Park Lab in collaboration with the Hide Lab in Harvard - aims to collect, process and most importantly visualize biomedical workflows. Their former visualization was based on a Python-based generated image which does not fulfill its initial purpose any more. In this report, we present a workflow visualization based on the Data-Driven Documents (D3.js) JavaScript library that provides level of detail, encodes multidimensional information through compact glyph design and provides necessary interaction features to satisfy the needs of domain experts working with biomedical data. The analyst’s requirements are then formalized as user tasks. These tasks are looked at concerning visual encoding and design choices as well as implementation and limitations. The workflow visualization is integrated into Refinery and showcased by the use of complex workflows (provided by the Galaxy Project). Cancer researchers who are working with processing pipelines on a regular basis will benefit from the visualization presented.</p>
-            <p>Advisors: Assist. Prof. Marc Streit at JKU and Assist. Prof. Nils Gehlenborg at Harvard Medical School, Boston, MA, USA.</p>
-            <p>Master Practicum at Johannes Kepler University, Linz, Austria.</p>
-            <p>2014</p>
-            <p>Tech: HTML, CSS, JavaScript, JSON, D3.js, SVG</p>
-
-            <div class="row">
-              <div class="col-md-12">
-                <a href="assets/img/workflow-vis.png" data-lightbox="wfvis" data-title="Workflow Visualization" class="thumbnail">
-                  <img src="assets/img/workflow-vis.png" class="img-rounded" alt="Workflow Visualization" >
-                </a>
-              </div>
-              <!--div class="col-md-12">
-                <a href="assets/img/01_collapsed_wf.PNG" data-lightbox="wfvis" data-title="Workflow Visualization" class="thumbnail">
-                  <img src="assets/img/01_collapsed_wf.PNG" class="img-rounded" alt="Workflow Visualization" >
-                </a>
-              </div>
-            </div-->
+            <div class="col-md-3">
+              <a href="assets/img/best-poster.jpg" data-lightbox="provvis" data-title="Best Poster Award at 2015 Chicago, IL, USA" class="thumbnail">
+                <img src="assets/img/best-poster.jpg" class="img-rounded" alt="IEEE VIS" style="max-height:281px;">
+              </a>
             </div>
-            <p>Resources</p>
-            <ul class="resources-sl">
-              <li><a href="https://github.com/parklab/refinery-platform"><i class="fa fa-github"></i> Source</a></li>
-              <li><a href="http://www.refinery-platform.org/"><i class="fa fa-external-link"></i> http://www.refinery-platform.org/</a></li>
-              <li><a href="assets/docs/workflow-vis.pdf" download><i class="fa fa-download"></i> Technical Report</a></li>
-            </ul>
+          </div>
+          <h4>Resources</h4>
+          <ul class="resources-sl">
+            <li><a href="https://github.com/parklab/refinery-platform"><i class="fa fa-github"></i> Source</a></li>
+            <li><a href="http://www.refinery-platform.org/"><i class="fa fa-external-link"></i> http://www.refinery-platform.org/</a></li>
+            <li><a href="assets/docs/provvis-poster-submission.pdf" download><i class="fa fa-download"></i> IEEE VIS Poster Submission</a></li>
+            <li><a href="assets/docs/provvis-poster.pdf" download><i class="fa fa-download"></i> IEEE VIS Poster</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="meanapp" class="panel panel-sl">
+        <div class="panel-heading">
+          <h3 class="panel-title">MEAN Stack App</h3>
+        </div>
+        <div class="panel-body panel-body-sl">
+          <p align="justify">This is a very simple MEAN Stack App based on MongoDB, Express.js, AngularJS, and Node.js that lists TV Shows with a Title and a Rating. The backend is done via Express on top of Node that provides a RESTful API of simple data stored in MongoDB. The frontend is written in Angular that consumes the REST endpoints with ngResource. Routing is done with ngRoute.</p>
+          <p>2015</p>
+          <p>Tech: MongoDB, Express.js, AngularJS, Node.js</p>
+          <h4>Resources</h4>
+          <ul class="resources-sl">
+            <li><a href="https://github.com/sluger/MeanShows"><i class="fa fa-github"></i> Source</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="djangoapp" class="panel panel-sl">
+        <div class="panel-heading">
+          <h3 class="panel-title">RESTful Django Angular App</h3>
+        </div>
+        <div class="panel-body panel-body-sl">
+          <p align="justify">This project is based on Django and AngularJS using Tastypie to separate client and server side. Initially this project focused on a serverside only implementation (e.g. Django inline formsets - hence the formset naming) and was then expanded through Tastypie and AngularJS to add a decoupled client side via restful API. The data held is of 'Authors' and 'Books', where multiple Authors may have written multiple books and vice versa.</p>
+          <p>2015</p>
+          <p>Tech: Django, Python, Tastypie, AngularJS</p>
+          <h4>Resources</h4>
+          <ul class="resources-sl">
+            <li><a href="https://github.com/sluger/Restful-Django-Angular-Tutorial"><i class="fa fa-github"></i> Source</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="wfvis" class="panel panel-sl">
+        <div class="panel-heading">
+          <h3 class="panel-title">Master Practicum</h3>
+        </div>
+        <div class="panel-body panel-body-sl">
+          <p class="panel-subtitle">An Interactive Workflow Visualization for Biomedical Processing Pipelines Integrated into the Refinery Platform</p>
+          <p align="justify">In the field of biomedical research, domain experts have to manage the complexity of heterogeneous and large data processed within analysis pipelines. Their goal is to get insights through (intermediate) results conveyed by the workflows representing
+            the pipelines. Obviously, when analyzing biomedical data (such as blood samples taken from patients), the information is stored in raw text formats and often too big to be handled. Scientific workflows consist of tools with each of them defining
+            their own experiment execution parameters. Because of the vast amount of data being processed, simply labeling the tools of a workflow (Nodes) and the IO-file stream connecting nodes (Links) would cause too much textual information. The Refinery
+            Platform (Refinery) - developed by the Park Lab in collaboration with the Hide Lab in Harvard - aims to collect, process and most importantly visualize biomedical workflows. Their former visualization was based on a Python-based generated
+            image which does not fulfill its initial purpose any more. In this report, we present a workflow visualization based on the Data-Driven Documents (D3.js) JavaScript library that provides level of detail, encodes multidimensional information
+            through compact glyph design and provides necessary interaction features to satisfy the needs of domain experts working with biomedical data. The analyst’s requirements are then formalized as user tasks. These tasks are looked at concerning
+            visual encoding and design choices as well as implementation and limitations. The workflow visualization is integrated into Refinery and showcased by the use of complex workflows (provided by the Galaxy Project). Cancer researchers who are
+            working with processing pipelines on a regular basis will benefit from the visualization presented.</p>
+          <p>Advisors: Assist. Prof. Marc Streit at JKU and Assist. Prof. Nils Gehlenborg at Harvard Medical School, Boston, MA, USA.</p>
+          <p>Master Practicum at Johannes Kepler University, Linz, Austria.</p>
+          <p>2014</p>
+          <p>Tech: HTML, CSS, JavaScript, JSON, D3.js, SVG</p>
+
+          <div class="row">
+            <div class="col-md-12">
+              <a href="assets/img/workflow-vis.png" data-lightbox="wfvis" data-title="Workflow Visualization" class="thumbnail">
+                <img src="assets/img/workflow-vis.png" class="img-rounded" alt="Workflow Visualization">
+              </a>
+            </div>
+          </div>
+          <h4>Resources</h4>
+          <ul class="resources-sl">
+            <li><a href="https://github.com/parklab/refinery-platform"><i class="fa fa-github"></i> Source</a></li>
+            <li><a href="http://www.refinery-platform.org/"><i class="fa fa-external-link"></i> http://www.refinery-platform.org/</a></li>
+            <li><a href="assets/docs/workflow-vis.pdf" download><i class="fa fa-download"></i> Technical Report</a></li>
+          </ul>
         </div>
 
         <div id="umltrans" class="panel panel-sl">
@@ -305,7 +271,12 @@
           </div>
           <div class="panel-body panel-body-sl">
             <p class="panel-subtitle">Constraint Generation and Partial Fixing for UML Models through Transformation</p>
-            <p align="justify">Working with complex models not only requires knowledge and skills to design them, but more importantly, change triggered to model elements by humans may violate the well- formedness or semantic design rules. Especially, semantic relationships within Unied Modeling Language (UML) models are complicated to preserve. Model-driven engineering standards such as the Object Constraint Language (OCL) support the necessary consis- tency checking. However, the manual generation of such constraint expressions and in advance the elimination of inconsistencies does not suit our needs. In this thesis, an in- cremental model manipulation approach (achieved through the ATLAS Transformation Language) is used to present an application for both traditional model transformation and constraint-driven modeling with the goal to eliminate existing inconsistencies (as far as possible). During the process of the transformation, constraints are generated to validate the model with - all in the context of the UML. In particular, 9 dierent constraint-driven scenarios, supporting class, sequence and statemachine diagrams/models, were developed. To illustrate a successful transformation process, the updated model is validated via the OCL subsequently. Model designers in the needs of consistency checking and constraint generation benet from the automatic and incremental execution provided by the implementation.</p>
+            <p align="justify">Working with complex models not only requires knowledge and skills to design them, but more importantly, change triggered to model elements by humans may violate the wellformedness or semantic design rules. Especially, semantic relationships
+              within Unified Modeling Language (UML) models are complicated to preserve. Model-driven engineering standards such as the Object Constraint Language (OCL) support the necessary consistency checking. However, the manual generation of such
+              constraint expressions and in advance the elimination of inconsistencies does not suit our needs. In this thesis, an incremental model manipulation approach (achieved through the ATLAS Transformation Language) is used to present an application
+              for both traditional model transformation and constraint-driven modeling with the goal to eliminate existing inconsistencies (as far as possible). During the process of the transformation, constraints are generated to validate the model
+              with - all in the context of the UML. In particular, 9 different constraint-driven scenarios, supporting class, sequence and statemachine diagrams/models, were developed. To illustrate a successful transformation process, the updated model
+              is validated via the OCL subsequently. Model designers in the needs of consistency checking and constraint generation benet from the automatic and incremental execution provided by the implementation.</p>
             <p>Advisors: Prof. Alexander Egyed and Dr. Andreas Demuth JKU</p>
             <p>Bachelor's Thesis at Johannes Kepler University, Linz, Austria.</p>
             <p>2013</p>
@@ -314,22 +285,11 @@
             <div class="row">
               <div class="col-md-12">
                 <a href="assets/img/uml-trans.png" data-lightbox="umltrans" data-title="UML Transformations" class="thumbnail">
-                  <img src="assets/img/uml-trans.png" class="img-rounded" alt="UML Transformations" >
+                  <img src="assets/img/uml-trans.png" class="img-rounded" alt="UML Transformations">
                 </a>
               </div>
-              <!--div class="col-md-4">
-                <a href="assets/img/uml-trans.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/uml-trans.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="assets/img/uml-trans.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/uml-trans.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
-              </div-->
             </div>
-
-            <p>Resources</p>
+            <h4>Resources</h4>
             <ul class="resources-sl">
 
             </ul>
@@ -341,24 +301,10 @@
             <h3 class="panel-title">Virtual Reality 3D DNA Visualization</h3>
           </div>
           <div class="panel-body panel-body-sl">
-            <!--p class="panel-subtitle">An Interactive Workflow Visualization for Biomedical Processing Pipelines Integrated into the Refinery Platform</p-->
             <p align="justify">Developing a virtual reality cave application that visualizes a strand of base pairs of the human DNA.</p>
             <p>Student Project at Johannes Kepler University, Linz, Austria.</p>
             <p>2012</p>
             <p>Tech: Virtual Reality, C++, SceneGraph</p>
-
-            <!--div class="row">
-              <div class="col-md-12">
-                <a href="assets/img/workflow-vis.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/workflow-vis.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
-              </div>
-            </div-->
-
-            <!--p>Resources</p>
-            <ul class="resources-sl">
-              <li><a href="https://github.com/sluger/MeanShows"><i class="fa fa-github"></i> Source</a></li>
-            </ul-->
           </div>
         </div>
 
@@ -367,24 +313,10 @@
             <h3 class="panel-title">Web Reference Management App</h3>
           </div>
           <div class="panel-body panel-body-sl">
-            <!--p class="panel-subtitle">An Interactive Workflow Visualization for Biomedical Processing Pipelines Integrated into the Refinery Platform</p-->
             <p align="justify">A simple back- and frontend implementation to manage (CRUD) literature references on the web.</p>
             <p>Student Project at Johannes Kepler University, Linz, Austria.</p>
             <p>2011</p>
             <p>Tech: Java, XML, WSDL, Soap, JSP</p>
-
-            <!--div class="row">
-              <div class="col-md-12">
-                <a href="assets/img/workflow-vis.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/workflow-vis.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
-              </div>
-            </div-->
-
-            <!--p>Resources</p>
-            <ul class="resources-sl">
-              <li><a href="https://github.com/sluger/MeanShows"><i class="fa fa-github"></i> Source</a></li>
-            </ul-->
           </div>
         </div>
 
@@ -393,24 +325,10 @@
             <h3 class="panel-title">Practicum in Bioinformatics</h3>
           </div>
           <div class="panel-body panel-body-sl">
-            <!--p class="panel-subtitle">An Interactive Workflow Visualization for Biomedical Processing Pipelines Integrated into the Refinery Platform</p-->
             <p align="justify">Bioinformatics software for microarray application interfaces. </p>
             <p>Software Developer at Krankenhaus der Barmherzigen Schwestern Linz</p>
             <p>2008-2009</p>
             <p>Tech: Java, SWT, Bioinformatics</p>
-
-            <!--div class="row">
-              <div class="col-md-12">
-                <a href="assets/img/workflow-vis.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/workflow-vis.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
-              </div>
-            </div-->
-
-            <!--p>Resources</p>
-            <ul class="resources-sl">
-              <li><a href="https://github.com/sluger/MeanShows"><i class="fa fa-github"></i> Source</a></li>
-            </ul-->
           </div>
         </div>
 
@@ -419,24 +337,10 @@
             <h3 class="panel-title">RNA Sequence Visualization</h3>
           </div>
           <div class="panel-body panel-body-sl">
-            <!--p class="panel-subtitle">An Interactive Workflow Visualization for Biomedical Processing Pipelines Integrated into the Refinery Platform</p-->
             <p align="justify">RNA Sequence Visualization and Annotation at the Medical University of Vienna.</p>
             <p>Student Project at University of Applied Sciences Upper Austria - Hagenberg Campus</p>
             <p>2007-2008</p>
             <p>Tech: Java, XML, Prefuse</p>
-
-            <!--div class="row">
-              <div class="col-md-12">
-                <a href="assets/img/workflow-vis.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/workflow-vis.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
-              </div>
-            </div-->
-
-            <!--p>Resources</p>
-            <ul class="resources-sl">
-              <li><a href="https://github.com/sluger/MeanShows"><i class="fa fa-github"></i> Source</a></li>
-            </ul-->
           </div>
         </div>
 
@@ -445,102 +349,92 @@
             <h3 class="panel-title">Extending LIMS</h3>
           </div>
           <div class="panel-body panel-body-sl">
-            <!--p class="panel-subtitle">An Interactive Workflow Visualization for Biomedical Processing Pipelines Integrated into the Refinery Platform</p-->
             <p align="justify">Developing a Laboratory Information Management System.</p>
             <p>Web Developer at BlueGnome, Cambridge, UK</p>
             <p>Summer 2007</p>
             <p>Tech: CGI, Debian</p>
-
-            <!--div class="row">
-              <div class="col-md-12">
-                <a href="assets/img/workflow-vis.png" data-lightbox="provvis" data-title="Provenance Visualization" class="thumbnail">
-                  <img src="assets/img/workflow-vis.png" class="img-rounded" alt="Provenance Visualization" >
-                </a>
-              </div>
-            </div-->
-
-            <!--p>Resources</p>
-            <ul class="resources-sl">
-              <li><a href="https://github.com/sluger/MeanShows"><i class="fa fa-github"></i> Source</a></li>
-            </ul-->
           </div>
         </div>
 
       </div>
-    </section>
+  </section>
 
-    <section id="about">
-      <div class="container">
-        <div class="panel panel-sl">
-          <div class="panel-heading">
-            <h3 class="panel-title">About</h3>
-          </div>
-          <div class="panel-body panel-body-sl">
-            <div class="row">
-              <div class="col-md-9">
-                <p align="justify">I'm a Web Developer and Visualization Expert and did my Masters degree in Computer Science at Johannes Kepler University Linz, Austria. Currently, I'm collaborating to a biomedical visualization project for The Refinery Platform (http://www.refinery-platform.org/), a web-based analysis and visualization system for biomedical datasets. I speak German and English and I'm interested in Hardware and Technology, and Astronomy. In my free time I like to play Volleyball, listen to Music, and enjoy watching Movies.</p>
-                <p>Contact:</p>
-                <ul class="resources-sl">
-                  <li><a href="https://github.com/sluger"><i class="fa fa-github"></i> GitHub</a></li>
-                  <li><a href="https://at.linkedin.com/in/stefanluger"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-                  <li><a href="https://about.me/stefanluger"><img src="assets/img/about-me.svg" style="height:13px;"></i> about.me</a></li>
-                  <li><a href="https://twitter.com/Stefan_Luxi"><i class="fa fa-twitter"></i> Twitter</a></li>
-                  <li><a href="https://www.facebook.com/stefan.luxi.3"><i class="fa fa-facebook-official"></i> Facebook</a></li>
-                  <li><a href="https://plus.google.com/u/0/107625935468470004482"><i class="fa fa-google-plus"></i> Google+</a></li>
-                </ul>
-                <p>Documents:</p>
-                <ul class="resources-sl">
-                  <li><a href="assets/docs/curriculum-vitae.pdf" download><i class="fa fa-download"></i> Curriculum Vitae</a></li>
-                </ul>
-
-              </div>
-              <div class="col-md-3">
-                <a href="assets/img/profile.jpg" data-lightbox="profile" data-title="Stefan Luger" class="thumbnail">
-                  <img src="assets/img/profile.jpg" class="img-rounded" alt="Stefan Luger">
-                </a>
-              </div>
+  <section id="about">
+    <div class="container">
+      <div class="panel panel-sl">
+        <div class="panel-heading">
+          <h3 class="panel-title">About</h3>
+        </div>
+        <div class="panel-body panel-body-sl">
+          <div class="row">
+            <div class="col-md-5">
+              <h4></h4>
+              <p align="justify">I'm a Web Developer and Visualization Expert and did my Masters degree in Computer Science at Johannes Kepler University Linz, Austria. Currently, I'm collaborating to a biomedical visualization project for The Refinery Platform (http://www.refinery-platform.org/), a web-based analysis and visualization system for biomedical datasets. I speak German and English and I'm interested in Hardware and Technology, and Astronomy. In my free time I like to play Volleyball, listen to Music, and enjoy watching Movies.
+              </p>
+            </div>
+            <div class="col-md-2">
+              <h4>Contact</h4>
+              <ul class="resources-sl">
+                <li><a href="https://github.com/sluger"><i class="fa fa-github"></i> GitHub</a></li>
+                <li><a href="https://at.linkedin.com/in/stefanluger"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                <li>
+                  <a href="https://about.me/stefanluger">
+                    <img src="assets/img/about-me.svg" style="height:13px;">
+                    </i> about.me</a>
+                </li>
+                <li><a href="https://twitter.com/Stefan_Luxi"><i class="fa fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.facebook.com/stefan.luxi.3"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+                <li><a href="https://plus.google.com/u/0/107625935468470004482"><i class="fa fa-google-plus"></i> Google+</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h4>Documents</h4>
+              <ul class="resources-sl">
+                <li><a href="assets/docs/curriculum-vitae.pdf" download><i class="fa fa-download"></i> Curriculum Vitae</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <a href="assets/img/profile.jpg" data-lightbox="profile" data-title="Stefan Luger" class="thumbnail">
+                <img src="assets/img/profile.jpg" class="img-rounded" alt="Stefan Luger">
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- footer -->
-    <!--footer>
-      <div class="container">
-        Copyright © Stefan Luger 2015
-      </div>
-    </footer-->
-
-
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
 
-    <script src="js/lightbox.min.js"></script>
-    <script>
-
+  <script src="js/lightbox.min.js"></script>
+  <script>
     /* From https://github.com/IronSummitMedia/startbootstrap-stylish-portfolio */
     // Scrolls to the selected menu item on the page
     $(function() {
-        $('a[href*=#]:not([href=#])').not('.carousel-control').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 500);
-                    return false;
-                }
-            }
-        });
-    });</script>
+      $('a[href*=#]:not([href=#])').not('.carousel-control').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 500);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>
