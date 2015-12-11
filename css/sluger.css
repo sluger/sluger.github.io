@@ -3,7 +3,9 @@ body {
 }
 .navbar-sl {
   background-color: #ffffff;
-  border: none;
+  /*border: none;*/
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(22, 92, 178, 0.5);
 }
 .navbar-default .navbar-brand-sl {
   color: rgba(22, 92, 178, 0.5);
@@ -118,7 +120,9 @@ body {
 }
 .table-sl>tbody>tr>td {
   border: 0;
-  padding: 4px;padding-left: 0px;
+  padding: 4px;
+  padding-left: 0px;
+  display: inline-block;
 }
 .thumbnail {
   border: none;

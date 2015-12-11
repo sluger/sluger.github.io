@@ -1,3 +1,3 @@
 # sluger.github.io
 
-A GitHub page of my portfolio.
+Portfolio and Personal Website: http://sluger.github.io/
