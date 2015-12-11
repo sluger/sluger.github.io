@@ -36,6 +36,8 @@
 </head>
 
 <body>
+
+  <!-- NAVBAR -->
   <nav class="navbar navbar-default navbar-sl navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -60,7 +62,7 @@
     </div>
   </nav>
 
-  <!-- teaser -->
+  <!-- TEASER -->
   <section id="teaser" class="teaser">
     <div class="container">
       <div class="row">
@@ -75,7 +77,7 @@
       </div>
   </section>
 
-  <!-- overview -->
+  <!-- OVERVIEW -->
   <section id="overview" class="overview">
     <div class="container">
       <div class="panel panel-sl">
@@ -135,11 +137,11 @@
   </section>
 
 
-
-
-  <!-- projects -->
+  <!-- PROJECTS -->
   <section id="projects" class="projects">
     <div class="container">
+
+      <!-- PROVVIS -->
       <div id="provvis" class="panel panel-sl">
         <div class="panel-heading panel-heading-sl">
           <p class="panel-title">Master's Thesis</p>
@@ -150,8 +152,12 @@
             <tbody>
               <tr align="justify">
                 <td colspan="2">
-                A major challenge of data-driven biomedical research lies in the collection and representation of provenance information to ensure reproducibility of the gained results. The Refinery Platform is an integrated data management, analysis, and visualization system designed to support reproducible biomedical research. In order to communicate and reproduce multi-step analyses on datasets that contain data of hundreds of samples, it is crucial to be able to visualize the provenance graph at different levels of detail. Most existing approaches are based on node-link diagrams, however, they usually do not scale well to large graphs. Our proposed visualization technique dynamically reduces the complexity of subgraphs through hierarchical aggregation and application of a degree-of-interest (DOI) function to each node. Triggered by user interactions, such as selecting a subset of analyses or a path in the graph, unaffected parts of the graph are dynamically aggregated into a glyph representation. We further reduce the complexity of the provenance graph visualization by layering identical or similar sequences of parallel analysis steps into an aggregated sequence.
-              </td>
+                  A major challenge of data-driven biomedical research lies in the collection and representation of provenance information to ensure reproducibility of the gained results. The Refinery Platform is an integrated data management, analysis, and visualization
+                  system designed to support reproducible biomedical research. In order to communicate and reproduce multi-step analyses on datasets that contain data of hundreds of samples, it is crucial to be able to visualize the provenance graph at
+                  different levels of detail. Most existing approaches are based on node-link diagrams, however, they usually do not scale well to large graphs. Our proposed visualization technique dynamically reduces the complexity of subgraphs through
+                  hierarchical aggregation and application of a degree-of-interest (DOI) function to each node. Triggered by user interactions, such as selecting a subset of analyses or a path in the graph, unaffected parts of the graph are dynamically
+                  aggregated into a glyph representation. We further reduce the complexity of the provenance graph visualization by layering identical or similar sequences of parallel analysis steps into an aggregated sequence.
+                </td>
               </tr>
               <tr>
                 <td>
@@ -198,7 +204,6 @@
               </a>
             </div>
           </div>
-
           <div class="row">
             <div class="col-md-6">
               <div class="embed-responsive embed-responsive-16by9">
@@ -248,6 +253,7 @@
         </div>
       </div>
 
+      <!-- MEAN -->
       <div id="meanapp" class="panel panel-sl">
         <div class="panel-heading">
           <h3 class="panel-title">MEAN Stack App</h3>
@@ -258,7 +264,8 @@
             <tbody>
               <tr align="justify">
                 <td colspan="2">
-                  This is a very simple MEAN Stack App based on MongoDB, Express.js, AngularJS, and Node.js that lists TV Shows with a Title and a Rating. The backend is done via Express on top of Node that provides a RESTful API of simple data stored in MongoDB. The frontend is written in Angular that consumes the REST endpoints with ngResource. Routing is done with ngRoute.
+                  This is a very simple MEAN Stack App based on MongoDB, Express.js, AngularJS, and Node.js that lists TV Shows with a Title and a Rating. The backend is done via Express on top of Node that provides a RESTful API of simple data stored in MongoDB. The frontend
+                  is written in Angular that consumes the REST endpoints with ngResource. Routing is done with ngRoute.
                 </td>
               </tr>
               <tr>
@@ -274,8 +281,6 @@
               </tr>
             </tbody>
           </table>
-
-          <!-- <p>2015</p> -->
           <table class="table table-sl">
             <tbody>
               <tr>
@@ -293,6 +298,7 @@
         </div>
       </div>
 
+      <!-- DJANGO -->
       <div id="djangoapp" class="panel panel-sl">
         <div class="panel-heading">
           <h3 class="panel-title">RESTful Django Angular App</h3>
@@ -303,7 +309,8 @@
             <tbody>
               <tr align="justify">
                 <td colspan="2">
-                  his project is based on Django and AngularJS using Tastypie to separate client and server side. Initially this project focused on a serverside only implementation (e.g. Django inline formsets - hence the formset naming) and was then expanded through Tastypie and AngularJS to add a decoupled client side via restful API. The data held is of 'Authors' and 'Books', where multiple Authors may have written multiple books and vice versa.
+                  This project is based on Django and AngularJS using Tastypie to separate client and server side. Initially this project focused on a serverside only implementation (e.g. Django inline formsets - hence the formset naming) and was then expanded through
+                  Tastypie and AngularJS to add a decoupled client side via restful API. The data held is of 'Authors' and 'Books', where multiple Authors may have written multiple books and vice versa.
                 </td>
               </tr>
               <tr>
@@ -337,6 +344,7 @@
         </div>
       </div>
 
+      <!-- WFVIS -->
       <div id="wfvis" class="panel panel-sl">
         <div class="panel-heading">
           <h3 class="panel-title">Master Practicum</h3>
@@ -348,13 +356,13 @@
               <tr align="justify">
                 <td colspan="2">
                   In the field of biomedical research, domain experts have to manage the complexity of heterogeneous and large data processed within analysis pipelines. Their goal is to get insights through (intermediate) results conveyed by the workflows representing
-                    the pipelines. Obviously, when analyzing biomedical data (such as blood samples taken from patients), the information is stored in raw text formats and often too big to be handled. Scientific workflows consist of tools with each of them defining
-                    their own experiment execution parameters. Because of the vast amount of data being processed, simply labeling the tools of a workflow (Nodes) and the IO-file stream connecting nodes (Links) would cause too much textual information. The Refinery
-                    Platform (Refinery) - developed by the Park Lab in collaboration with the Hide Lab in Harvard - aims to collect, process and most importantly visualize biomedical workflows. Their former visualization was based on a Python-based generated
-                    image which does not fulfill its initial purpose any more. In this report, we present a workflow visualization based on the Data-Driven Documents (D3.js) JavaScript library that provides level of detail, encodes multidimensional information
-                    through compact glyph design and provides necessary interaction features to satisfy the needs of domain experts working with biomedical data. The analyst’s requirements are then formalized as user tasks. These tasks are looked at concerning
-                    visual encoding and design choices as well as implementation and limitations. The workflow visualization is integrated into Refinery and showcased by the use of complex workflows (provided by the Galaxy Project). Cancer researchers who are
-                    working with processing pipelines on a regular basis will benefit from the visualization presented.
+                  the pipelines. Obviously, when analyzing biomedical data (such as blood samples taken from patients), the information is stored in raw text formats and often too big to be handled. Scientific workflows consist of tools with each of them
+                  defining their own experiment execution parameters. Because of the vast amount of data being processed, simply labeling the tools of a workflow (Nodes) and the IO-file stream connecting nodes (Links) would cause too much textual information.
+                  The Refinery Platform (Refinery) - developed by the Park Lab in collaboration with the Hide Lab in Harvard - aims to collect, process and most importantly visualize biomedical workflows. Their former visualization was based on a Python-based
+                  generated image which does not fulfill its initial purpose any more. In this report, we present a workflow visualization based on the Data-Driven Documents (D3.js) JavaScript library that provides level of detail, encodes multidimensional
+                  information through compact glyph design and provides necessary interaction features to satisfy the needs of domain experts working with biomedical data. The analyst’s requirements are then formalized as user tasks. These tasks are looked
+                  at concerning visual encoding and design choices as well as implementation and limitations. The workflow visualization is integrated into Refinery and showcased by the use of complex workflows (provided by the Galaxy Project). Cancer
+                  researchers who are working with processing pipelines on a regular basis will benefit from the visualization presented.
                 </td>
               </tr>
               <tr>
@@ -387,7 +395,6 @@
               </tr>
             </tbody>
           </table>
-
           <div class="row">
             <div class="col-md-12">
               <a href="assets/img/workflow-vis.png" data-lightbox="wfvis" data-title="Workflow Visualization" class="thumbnail">
@@ -395,7 +402,6 @@
               </a>
             </div>
           </div>
-
           <table class="table table-sl">
             <tbody>
               <tr>
@@ -422,6 +428,7 @@
           </table>
         </div>
 
+        <!-- BSC -->
         <div id="umltrans" class="panel panel-sl">
           <div class="panel-heading">
             <h3 class="panel-title">Bachelor's Thesis</h3>
@@ -432,12 +439,12 @@
               <tbody>
                 <tr align="justify">
                   <td colspan="2">
-                    Working with complex models not only requires knowledge and skills to design them, but more importantly, change triggered to model elements by humans may violate the wellformedness or semantic design rules. Especially, semantic relationships
-                      within Unified Modeling Language (UML) models are complicated to preserve. Model-driven engineering standards such as the Object Constraint Language (OCL) support the necessary consistency checking. However, the manual generation of such
-                      constraint expressions and in advance the elimination of inconsistencies does not suit our needs. In this thesis, an incremental model manipulation approach (achieved through the ATLAS Transformation Language) is used to present an application
-                      for both traditional model transformation and constraint-driven modeling with the goal to eliminate existing inconsistencies (as far as possible). During the process of the transformation, constraints are generated to validate the model
-                      with - all in the context of the UML. In particular, 9 different constraint-driven scenarios, supporting class, sequence and statemachine diagrams/models, were developed. To illustrate a successful transformation process, the updated model
-                      is validated via the OCL subsequently. Model designers in the needs of consistency checking and constraint generation benet from the automatic and incremental execution provided by the implementation.
+                    Working with complex models not only requires knowledge and skills to design them, but more importantly, change triggered to model elements by humans may violate the wellformedness or semantic design rules. Especially, semantic relationships within Unified
+                    Modeling Language (UML) models are complicated to preserve. Model-driven engineering standards such as the Object Constraint Language (OCL) support the necessary consistency checking. However, the manual generation of such constraint
+                    expressions and in advance the elimination of inconsistencies does not suit our needs. In this thesis, an incremental model manipulation approach (achieved through the ATLAS Transformation Language) is used to present an application
+                    for both traditional model transformation and constraint-driven modeling with the goal to eliminate existing inconsistencies (as far as possible). During the process of the transformation, constraints are generated to validate the
+                    model with - all in the context of the UML. In particular, 9 different constraint-driven scenarios, supporting class, sequence and statemachine diagrams/models, were developed. To illustrate a successful transformation process, the
+                    updated model is validated via the OCL subsequently. Model designers in the needs of consistency checking and constraint generation benet from the automatic and incremental execution provided by the implementation.
                   </td>
                 </tr>
                 <tr>
@@ -486,7 +493,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <li><a href="assets/docs/BSc_Thesis.pdf" download><i class="fa fa-download"></i> Bachelor's Thesis</a></li>
+                    <a href="assets/docs/BSc_Thesis.pdf" download><i class="fa fa-download"></i> Bachelor's Thesis</a>
                   </td>
                 </tr>
               </tbody>
@@ -494,6 +501,7 @@
           </div>
         </div>
 
+        <!-- VR -->
         <div id="vr" class="panel panel-sl">
           <div class="panel-heading">
             <h3 class="panel-title">Virtual Reality Student Project</h3>
@@ -530,6 +538,7 @@
           </div>
         </div>
 
+        <!-- WEBSERVICE -->
         <div id="refmanagement" class="panel panel-sl">
           <div class="panel-heading">
             <h3 class="panel-title">Web Service Student Project</h3>
@@ -579,7 +588,8 @@
               <tbody>
                 <tr align="justify">
                   <td colspan="2">
-                    I have implemented a Java interface for the purpose of processing microarray-based patient samples. These samples are laid onto pipetting layouts that serve as the input for the microplates. A bar code check implementation and a validation report will help to raise the standrads in quality control. So to speak, I have translated the former manual and cumbersome working process into an efficient and usability-driven user interface application.
+                    I have implemented a Java interface for the purpose of processing microarray-based patient samples. These samples are laid onto pipetting layouts that serve as the input for the microplates. A bar code check implementation and a validation report will
+                    help to raise the standrads in quality control. So to speak, I have translated the former manual and cumbersome working process into an efficient and usability-driven user interface application.
                   </td>
                 </tr>
                 <tr>
@@ -682,6 +692,7 @@
       </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about">
     <div class="container">
       <div class="panel panel-sl">
@@ -690,12 +701,14 @@
         </div>
         <div class="panel-body panel-body-sl">
           <div class="row">
-            <div class="col-md-7 col-xs-6">
+            <div class="col-md-9 col-xs-8">
               <table class="table table-sl">
                 <tbody>
                   <tr align="justify">
                     <td colspan="2">
-                      I'm a Web Developer and Visualization Expert and did my Masters degree in Computer Science at Johannes Kepler University Linz, Austria. Currently, I'm collaborating to a biomedical visualization project for The Refinery Platform (http://www.refinery-platform.org/), a web-based analysis and visualization system for biomedical datasets. I speak German and English and I'm interested in Hardware and Technology, and Astronomy. In my free time I like to play Volleyball, listen to Music, and enjoy watching Movies.
+                      I'm a Web Developer and Visualization Expert and did my Masters degree in Computer Science at Johannes Kepler University Linz, Austria. Currently, I'm collaborating to a biomedical visualization project for The Refinery Platform (http://www.refinery-platform.org/),
+                      a web-based analysis and visualization system for biomedical datasets. I speak German and English and I'm interested in Hardware and Technology, and Astronomy. In my free time I like to play Volleyball, listen to Music, and enjoy
+                      watching Movies.
                     </td>
                   </tr>
                   <tr>
@@ -711,49 +724,6 @@
                 </tbody>
               </table>
             </div>
-
-            <div class="col-md-2 col-xs-2">
-              <table class="table table-sl">
-                <tbody>
-                  <tr>
-                    <td>
-                      <b>Contact</b>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="https://github.com/sluger"><i class="fa fa-github"></i> GitHub</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="https://at.linkedin.com/in/stefanluger"><i class="fa fa-linkedin"></i> LinkedIn</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="https://about.me/stefanluger">
-                        <img src="assets/img/about-me.svg" style="height:13px;">
-                        </i> about.me</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="https://twitter.com/Stefan_Luxi"><i class="fa fa-twitter"></i> Twitter</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="https://www.facebook.com/stefan.luxi.3"><i class="fa fa-facebook-official"></i> Facebook</a>
-                    </td>
-                  </tr>
-                    <td>
-                      <a href="https://plus.google.com/u/0/107625935468470004482"><i class="fa fa-google-plus"></i> Google+</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
             <div class="col-md-3 col-xs-4">
               <a href="assets/img/profile.jpg" data-lightbox="profile" data-title="Stefan Luger" class="thumbnail">
                 <img src="assets/img/profile.jpg" class="img-rounded" alt="Stefan Luger">
@@ -764,6 +734,23 @@
       </div>
     </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <ul class="footer-ul-sl">
+      <li><a href="https://github.com/sluger"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://at.linkedin.com/in/stefanluger"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://twitter.com/Stefan_Luxi"><i class="fa fa-twitter"></i></a></li>
+      <li>
+        <a href="https://about.me/stefanluger">
+          <img src="assets/img/about-me.svg">
+        </a>
+      </li>
+      <li><a href="https://www.facebook.com/stefan.luxi.3"><i class="fa fa-facebook-official"></i></a></li>
+      <li><a href="https://plus.google.com/u/0/107625935468470004482"><i class="fa fa-google-plus"></i></a></li>
+    </ul>
+  </footer>
+
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
