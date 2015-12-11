@@ -133,3 +133,9 @@ body {
   background-color: rgba(22,92,178,0.15);
   color: #165CB2;
 }
+
+.table-sl>tbody>tr>td {
+  border: 0;
+  padding: 4px;
+  padding-left: 0px;
+}
